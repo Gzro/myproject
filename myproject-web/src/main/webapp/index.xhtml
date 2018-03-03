@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Login</title>
+</h:head>
+<h:body>
+	<h2>Page d'authentification</h2>
+	<h:form>
+		<h:outputLabel value="Login: "></h:outputLabel>
+		<h:inputText value="#{userBean.login}"></h:inputText>
+		<br />
+
+		<h:outputLabel value="Mot de passe: "></h:outputLabel>
+		<h:inputSecret value="#{userBean.password}" />
+		<br />
+		<h:commandButton value="Se connecter" action="#{userBean.valider}" />
+	</h:form>
+</h:body>
+</html>
